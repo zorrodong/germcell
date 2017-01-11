@@ -2,7 +2,7 @@
 Single-cell RNA-seq analysis of human germline cells and their niche cells.
 
 #1: 
-One can use this shiny app to see the expression pattern of human germline cells and their niche cells in R program (make sure shiny package has already been installed: install.packages("shiny"))
+One can use this shiny app to see the expression pattern of human germline cells and their niche cells in R program (make sure shiny package has already been installed: install.packages("shiny")):
 
 library(shiny)
 
