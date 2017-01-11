@@ -6,7 +6,7 @@ One can use this shiny app to see the expression pattern of human germline cells
 
 library(shiny)
 
-runGitHub("germcell", "zorrodong")
+runGitHub("germcell", "zorrodong") #wait for ~ 1 minute,depends on network speed
 
 #2: 
 one can also extract the expression value on log2(TPM/10 + 1) of human germline cells and their niche cells by downloading the germ_cell.RData and doing this in R:
