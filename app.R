@@ -1,4 +1,19 @@
+#Single-cell RNA-seq analysis of human germline cells and their niche cells
+load("germ_cell.RData")
+
 library(shiny)
+
+ui <- fluidPage(
+  headerPanel('Single-cell RNA-seq analysis of human germline cells and their niche cells'),
+  sidebarPanel(
+    selectInput(inputId="gene", label='Select or Input Gene Symbol', choices = row.names(data_log2), selected = "KIT"),
+	submitButton(text = "Submit"),
+    helpText("Click the submit button to update the plot displayed in the right panel.")
+  ), 
+  mainPanel(
+    plotOutput('plot1')
+  )
+)
 
 server <- function(input, output) {
   gene_id <- reactive({
@@ -15,3 +30,5 @@ server <- function(input, output) {
        border=c("ForestGreen","DeepPink1","DodgerBlue","red","black","Thistle3","grey51","LightGray","MediumBlue","DarkOrange","purple","LightCyan4","PeachPuff1","LightBlue2","PeachPuff4"))
   })
 }
+
+shinyApp(ui = ui, server = server)
