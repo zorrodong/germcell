@@ -12,3 +12,6 @@ runGitHub("germcell", "zorrodong") #wait for ~ 1 minute,depends on network speed
 one can also extract the expression value on log2(TPM/10 + 1) of human germline cells and their niche cells by downloading the germ_cell.RData and doing this in R:
 
 load("gern_cell.RData") #and the expression value is stored in the variable: data_log2
+
+#3:
+Also, the expression value on log2 (TPM/10+1) and UMI counts data are available in the compressed zip file: germcell_expression_values_and_umi_counts.rar
