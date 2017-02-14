@@ -17,4 +17,4 @@ load("gern_cell.RData") #and the expression value is stored in the variable: dat
 In addition, the expression value on log2 (TPM/10+1) and UMI counts data are available in the compressed zip file: germcell_expression_values_and_umi_counts.rar
 
 #4：
-The supplementary discussion includes two parts: (i) The Expression Characteristics of Ribosome-associated Genes and RNA-binding Proteins; (2) Species specifically expressed genes in mouse and human FGCs and gonad niche cells.
+The supplemental discussion includes two parts: (i) The Expression Characteristics of Ribosome-associated Genes and RNA-binding Proteins; (2) Species Specifically Expressed Genes in Mouse and Human FGCs and Gonad Niche Cells.
